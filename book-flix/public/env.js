@@ -1,3 +1,3 @@
 window.env = {
-  "URL": "http://localhost:3000"
+  "URL": "https://bc13w11d5backend-bookflix.onrender.com/"
 };
