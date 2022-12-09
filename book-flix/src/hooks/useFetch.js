@@ -15,7 +15,7 @@ function useFetch() {
 
   useEffect(() => {
     fetchBook();
-  }, [books]);
+  }, []);
 
   console.log("books state: ", books);
 
