@@ -1,0 +1,66 @@
+/* App Flex Box Container */
+
+* {
+    margin: 0;
+    font-weight: normal;
+}
+
+.App {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {}
+
+/* Search and Add Flex Box Container */
+
+#search-add {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+/* Search Flex Box Container */
+
+#search-bar {
+    display: flex;
+    flex-flow: row;
+    height: 30px;
+}
+
+#search-input {
+    width: 195px;
+}
+
+/* Search Flex Box Container */
+
+#add-book {
+    display: flex;
+    flex-flow: row;
+    height: 30px;
+}
+
+#find-text {
+    width: 145px;
+    height: 30px;
+}
+
+#find-button {
+    width: 90px;
+    height: 30px;
+}
+
+/* Book Card Flex Div */
+
+#book-card {
+    display: flex;
+    flex-flow: row;
+}
+
+#card-image {}
+
+#card-info {}
