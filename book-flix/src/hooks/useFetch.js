@@ -6,17 +6,15 @@ function useFetch() {
 
   const [books, setBook] = useState([{}]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  async function fetchBook() {
-    const response = await fetch(`${URL}api/books/search`);
-    const data = await response.json();
-    console.log("book data: ", data);
-    setBook(data.payload);
-  }
-
   useEffect(() => {
+    async function fetchBook() {
+      const response = await fetch(`${URL}api/books/search`);
+      const data = await response.json();
+      console.log("book data: ", data);
+      setBook(data.payload);
+    }
     fetchBook();
-  }, [fetchBook]);
+  }, [URL]);
 
   console.log("books state: ", books);
 
